@@ -7,36 +7,36 @@ def home():
     return render_template("home.html")
 
 @app.route('/articles')
-def about():
+def articles():
     return render_template('articles.html')
 
 @app.route('/brands')
-def about():
+def brands():
     return render_template('brands.html')
 
 @app.route('/contact')
-def about():
+def contact():
     return render_template('contact.html')
 
 @app.route('/faq')
-def about():
+def faq():
     return render_template('faq.html')
 
 @app.route('/idoluse')
-def about():
+def idoluse():
     return render_template('idoluse.html')
 
 @app.route('/login')
-def about():
+def login():
     return render_template('login.html')
 
 @app.route('/perfumes')
-def about():
+def perfumes():
     return render_template('perfumes.html')
 
-@app.route('/regiter')
-def about():
-    return render_template('regiter.html')
+@app.route('/register')
+def regiter():
+    return render_template('register.html')
 
 @app.route('/about')
 def about():

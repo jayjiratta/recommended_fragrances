@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Home</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="static/img/icon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Assets -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- CSS main -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
 <body>
-    <h1>Home</h1>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+        <a href="/" class="logo me-auto me-lg-0"><img src="static/img/name.png" alt="" class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+            <li><a class="nav-link scrollto " href="/">home</a></li>
+            <li><a class="nav-link scrollto " href="/articles">articles</a></li>
+            <li><a class="nav-link scrollto " href="/brands">brands</a></li>
+            <li><a class="nav-link scrollto " href="/contact">contact</a></li>
+            <li><a class="nav-link scrollto " href="/faq">faq</a></li>
+            <li><a class="nav-link scrollto " href="/idoluse">idoluse</a></li>
+            <li><a class="nav-link scrollto " href="/login">login</a></li>
+            <li><a class="nav-link scrollto " href="/perfumes">perfumes</a></li>
+            <li><a class="nav-link scrollto " href="/register">register</a></li>
+            <li><a class="nav-link scrollto " href="/about">about</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+    </header>
+    <main id="main">
 </body>
 </html>
