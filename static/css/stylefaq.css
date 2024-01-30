@@ -1,11 +1,17 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: montserrat;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(51, 51, 51);
+    background-color: #fff;
     background: linear-gradient(120deg, #294fb9, #2779a8);
-    height: 100vh;
-    overflow: hidden;
-    font-family: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap';
 }
 
 /* navbar */
@@ -42,4 +48,28 @@ ul.menu li a {
 ul.menu li a:hover {
     color: yellow;
     transition: .5s;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.faq-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
 }
