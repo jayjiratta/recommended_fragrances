@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,20 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/stylefaq.css') }}">
 </head>
+
 <body>
     <nav>
-		<div class="container">
-			<div class="nav-con">
-				<div class="logo">
-					<h1>SCENTSPECTRUM</h1>
-				</div>
-				<ul class="menu">
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <h1>SCENTSPECTRUM</h1>
+                </div>
+                <ul class="menu">
                     <li><a class="nav-link scrollto " href="/">home</a></li>
                     <li><a class="nav-link scrollto " href="/articles">articles</a></li>
                     <li><a class="nav-link scrollto " href="/brands">brands</a></li>
@@ -31,9 +34,109 @@
                     <li><a class="nav-link scrollto " href="/about">about</a></li>
                     <li><a class="nav-link scrollto " href="/login">login</a></li>
                     <li><a class="nav-link scrollto " href="/register">register</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="faq" class="faq">
+        <div class="container" style="padding: 15px;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="markdown-container">
+                        <div class="faq-box">
+                            <header>
+                                <div>
+                                    <h1>Are the product links provided in the brand gallery affiliate links?</h1>
+                                </div>
+                            </header>
+                            <p>
+                                "No, the product links in our brand gallery are not affiliate links. We aim to provide
+                                direct links to the official websites of the featured brands, allowing you to explore
+                                and purchase their products with confidence. SCENTSPECTRUM is committed to transparency
+                                and providing valuable, non-biased information to our audience."
+                            </p>
+                        </div>
+
+                        <div class="faq-box">
+                            <header>
+                                <div>
+                                    <h1>How can I explore different fragrance brands on SCENTSPECTRUM?</h1>
+                                </div>
+                            </header>
+                            <p>
+                                "Navigating through our website is simple. Visit the "Brands" section to discover a
+                                curated collection of renowned fragrance brands. Each brand is accompanied by stunning
+                                visuals, and by clicking on the images, you can find more details about the brand along
+                                with direct links to their official websites."
+                            </p>
+                        </div>
+
+                        <div class="faq-box">
+                            <header>
+                                <div>
+                                    <h1>Can I purchase the fragrances featured on SCENTSPECTRUM directly from your
+                                        website?</h1>
+                                </div>
+                            </header>
+                            <p>
+                                "SCENTSPECTRUM doesn't sell products directly. However, we provide links to official
+                                brand websites and reputable retailers in the details section of each brand showcase.
+                                Click on the provided links to explore and make purchases directly from the brands'
+                                official sources."
+                            </p>
+                        </div>
+
+                        <div class="faq-box">
+                            <header>
+                                <div>
+                                    <h1>Do you accept sponsored content or collaborations with fragrance brands?</h1>
+                                </div>
+                            </header>
+                            <p>
+                                "At the moment, SCENTSPECTRUM is not engaged in sponsored content or brand
+                                collaborations. Our content is solely created based on the preferences and experiences
+                                of our admin. If there are changes in the future regarding partnerships, we will make
+                                announcements through our official channels."
+                            </p>
+                        </div>
+
+                        <div class="faq-box">
+                            <header>
+                                <div>
+                                    <h1>How often do you update the content on SCENTSPECTRUM?</h1>
+                                </div>
+                            </header>
+                            <p>
+                                "We aim to provide you with fresh and engaging content regularly. Typically, new
+                                articles and brand features are added on a bi-weekly basis. However, we may adjust the
+                                frequency based on special events, launches, or community feedback. Stay tuned to our
+                                "Latest" section for the most up-to-date information."
+                            </p>
+                        </div>
+
+                        <!-- Add similar faq-box divs for each question -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/vendor/aos/aos.js"></script>
+    <script src="static/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="static/js/main.js"></script>
 </body>
+
 </html>
