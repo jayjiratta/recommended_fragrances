@@ -2,23 +2,23 @@ from flask import Flask ,render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/Home')
 def home():    
     return render_template("home.html")
 
-@app.route('/articles')
+@app.route('/Articles')
 def articles():
-    return render_template('articles.html')
+    return render_template('article.html')
 
-@app.route('/brands')
+@app.route('/Brands')
 def brands():
-    return render_template('brands.html')
+    return render_template('brand.html')
 
-@app.route('/contact')
+@app.route('/Contact')
 def contact():
     return render_template('contact.html')
 
-@app.route('/faq')
+@app.route('/FAQs')
 def faq():
     return render_template('faq.html')
 
@@ -26,19 +26,19 @@ def faq():
 def idoluse():
     return render_template('idoluse.html')
 
-@app.route('/login')
+@app.route('/LOGIN')
 def login():
     return render_template('login.html')
 
-@app.route('/perfumes')
+@app.route('/Perfumes')
 def perfumes():
-    return render_template('perfumes.html')
+    return render_template('perfume.html')
 
-@app.route('/register')
-def regiter():
+@app.route('/REGISTER')
+def register():
     return render_template('register.html')
 
-@app.route('/about')
+@app.route('/About')
 def about():
     return render_template('about.html')
 
