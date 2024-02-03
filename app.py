@@ -54,11 +54,11 @@ def register():
 def home():    
     return render_template("home.html")
 
-@app.route('/article')
+@app.route('/articles')
 def articles():
     return render_template('article.html')
 
-@app.route('/brand')
+@app.route('/brands')
 def brands():
     return render_template('brand.html')
 
@@ -74,7 +74,7 @@ def faq():
 def idoluse():
     return render_template('idoluse.html')
 
-@app.route('/perfume')
+@app.route('/perfumes')
 def perfumes():
     return render_template('perfume.html')
 
