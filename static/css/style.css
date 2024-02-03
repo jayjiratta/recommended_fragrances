@@ -105,7 +105,7 @@ h6,
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Playfair Display", serif;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -117,7 +117,7 @@ h6,
         background: var(--primary);
     }
 
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -305,19 +305,19 @@ h6,
         max-width: 100% !important;
     }
 
-    .newsletter .newsletter-text  {
+    .newsletter .newsletter-text {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .newsletter .newsletter-text  {
+    .newsletter .newsletter-text {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .newsletter .newsletter-text  {
+    .newsletter .newsletter-text {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -327,11 +327,11 @@ h6,
 .case-item img {
     transition: .5s;
 }
-  
+
 .case-item:hover img {
     transform: scale(1.2);
 }
-  
+
 .case-overlay {
     position: absolute;
     padding: 30px;
@@ -343,7 +343,6 @@ h6,
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: linear-gradient(rgba(20, 24, 62, 0), var(--dark));
     z-index: 1;
 }
 
@@ -354,6 +353,7 @@ h6,
     background: rgba(20, 24, 62, .7);
     border-radius: 25px;
     margin-bottom: 15px;
+
 }
 
 .case-overlay span.btn:hover {
@@ -476,7 +476,7 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     border: 1px solid rgba(256, 256, 256, .1);
     border-radius: 40px;
     transition: .3s;
@@ -491,7 +491,7 @@ h6,
     margin-bottom: 10px;
     padding: 0;
     text-align: left;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-weight: normal;
     transition: .3s;
 }
@@ -503,7 +503,7 @@ h6,
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Playfair Display", serif;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
 }
@@ -520,7 +520,7 @@ h6,
 }
 
 .footer .copyright a {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
 
 .footer .copyright a:hover {
