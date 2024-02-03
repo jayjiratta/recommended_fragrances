@@ -3,5 +3,5 @@ pip install -r requirements.txt
 ```
 
 ```
-flask --app web  run --debug
+flask --app app  run --debug
 ```
