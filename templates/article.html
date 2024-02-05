@@ -17,19 +17,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
         rel="stylesheet">
 
-<!-- Icon Font Stylesheet -->
-<link href="{{ url_for('static', filename='css/all.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="{{ url_for('static', filename='css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}" rel="stylesheet">
 
-<!-- Libraries Stylesheet -->
-<link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-<!-- Customized Bootstrap Stylesheet -->
-<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
-<!-- Template Stylesheet -->
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href= "{{ url_for('index') }}" class="navbar-brand">
+                <a href="{{ url_for('index') }}" class="navbar-brand">
                     <h1 class="text-white">SCENTSPECTRUM</h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
@@ -97,54 +97,444 @@
     <!-- Hero End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
-                    <h1 class="mb-4">What Say Our Clients!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Main Content (3/4 of display) -->
+            <div class="col-lg-9">
+                <div class="container-xxl py-5">
+                    <div class="container py-5">
+                        <div class="row g-5">
+                            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="accordion" id="accordionFAQ1">
+                                    <!-- Article 1 -->
+                                    <div class="article mb-4">
+                                        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Articles
+                                        </div>
+                                        <h1 class="mb-4">A Guide to the World of Fragrance</h1>
+                                        <p class="mb-4">In the enchanting realm of perfumery, Jane Doe, a distinguished
+                                            Perfume Expert, invites you to delve into the essence of fragrance. In this
+                                            brief guide, we explore the fundamentals of perfume, its diverse types, and
+                                            the art of selecting the perfect scent for any occasion.</p>
+
+                                        <div class="accordion" id="accordionFAQ1">
+                                            <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        Full Article
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionFAQ1">
+                                                    <div class="accordion-body-for-article">
+                                                        <div class="article">
+                                                            <div class="header">
+                                                                <h1>A Guide to the World of Fragrance</h1>
+                                                                <p>By Jane Doe, Perfume Expert</p>
+                                                            </div>
+                                                            <div class="article">
+                                                                <h2>What is Perfume?</h2>
+                                                                <p>Perfume is a liquid scent that is applied to the skin
+                                                                    to create a pleasant fragrance. It is typically
+                                                                    composed of three main components: top notes, middle
+                                                                    notes, and base notes. Top notes are the lightest
+                                                                    and most fleeting fragrances, followed by middle
+                                                                    notes, which are more persistent, and finally, base
+                                                                    notes, which are the most enduring fragrances.</p>
+                                                                <h2>Types of Perfume</h2>
+                                                                <p>There are several types of perfume, including:</p>
+                                                                <ul>
+                                                                    <li>Eau de Toilette (EDT): This is the most common
+                                                                        type of perfume. It is a light, fresh fragrance
+                                                                        that is ideal for daytime wear.</li>
+                                                                    <li>Eau de Parfum (EDP): EDP is a more concentrated
+                                                                        version of EDT. It has a longer lasting
+                                                                        fragrance and is ideal for both day and evening
+                                                                        wear.</li>
+                                                                    <li>Colognes: Colognes are a more concentrated form
+                                                                        of perfume. They are typically used for
+                                                                        aftershave and cologne. Colognes are also
+                                                                        available in EDT and EDP varieties.</li>
+                                                                </ul>
+                                                                <h2>Choosing the Right Perfume</h2>
+                                                                <p>When choosing the right perfume, it is important to
+                                                                    consider factors such as your skin type, the desired
+                                                                    fragrance, and the occasion for which you will be
+                                                                    wearing the perfume.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Article 1 -->
+                                    <div class="article mb-4">
+                                        <div></div>
+                                        <h1 class="mb-4">The Perfect Unisex Fragrance for Every Occasion</h1>
+                                        <p class="mb-4">Are you on the quest for the ultimate unisex fragrance that
+                                            seamlessly transitions from adventure to work, and from a night party to
+                                            everyday use? Look no further! Discover the perfect scent that captures the
+                                            essence of every occasion. Click here to delve into the world of versatile
+                                            fragrances that add a touch of sophistication to your daily life.</p>
+
+                                        <div class="accordion" id="accordionFAQ1">
+                                            <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Full Article
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ1">
+                                                    <div class="accordion-body-for-article">
+                                                        <div class="article">
+                                                            <div class="header">
+                                                                <h1>The Perfect Unisex Fragrance for Every Occasion</h1>
+                                                                <p>By Lia Jones , Perfume Expert</p>
+                                                            </div>
+                                                            <div class="article">
+                                                                <p>In the realm of personal expression and style,
+                                                                    finding the right fragrance is akin to discovering a
+                                                                    signature accessory that resonates with your
+                                                                    personality. The journey toward the perfect unisex
+                                                                    fragrance involves a delicate balance of notes and
+                                                                    versatility, ensuring it harmonizes with various
+                                                                    aspects of your life.</p>
+                                                                <h2>Adventure: Creed Aventus</h2>
+                                                                <p>For the spirited souls seeking olfactory
+                                                                    companionship during outdoor escapades, Creed
+                                                                    Aventus emerges as a beacon of invigorating scents.
+                                                                    With a dynamic blend of pineapple, bergamot, and
+                                                                    blackcurrant interwoven with smoky woods, Aventus
+                                                                    captures the essence of adventure. It's a fragrant
+                                                                    celebration of energy and exploration, making it an
+                                                                    ideal companion for thrilling excursions.</p>
+                                                                <h2>Work: Maison Margiela Replica - Jazz Club</h2>
+                                                                <p>Navigating the professional realm demands a fragrance
+                                                                    that strikes the perfect balance between subtlety
+                                                                    and sophistication. Maison Margiela's Jazz Club,
+                                                                    with its notes of tobacco, rum, and vanilla, crafts
+                                                                    an olfactory narrative of warmth and refinement.
+                                                                    It's the olfactory equivalent of a tailored suit,
+                                                                    making it an impeccable choice for the workplace.
+                                                                </p>
+                                                                <h2>Night Party: Yves Saint Laurent Black Opium</h2>
+                                                                <p>As the sun sets and the city comes alive, the allure
+                                                                    of Yves Saint Laurent's Black Opium takes center
+                                                                    stage. The enticing combination of coffee, vanilla,
+                                                                    and white flowers creates a captivating scent that
+                                                                    complements the vibrant atmosphere of night parties.
+                                                                    Black Opium transforms the night into a sensorial
+                                                                    experience, leaving an unforgettable impression.</p>
+                                                                <h2>Fit for Every Situation: Chanel Gabrielle Chanel
+                                                                </h2>
+                                                                <p>The quest for a fragrance that seamlessly transitions
+                                                                    through the myriad facets of life concludes with
+                                                                    Chanel's Gabrielle Chanel. This well-balanced floral
+                                                                    composition, featuring notes of jasmine,
+                                                                    ylang-ylang, and orange blossom, exudes timeless
+                                                                    elegance. Gabrielle Chanel is the olfactory
+                                                                    chameleon, effortlessly adapting to every situation,
+                                                                    from casual outings to formal gatherings.</p>
+                                                                <p>Embark on a fragrant journey that transcends the
+                                                                    boundaries of occasion. Each of these perfumes is a
+                                                                    carefully curated masterpiece, offering a unique
+                                                                    olfactory experience tailored to different facets of
+                                                                    your life. Elevate your personal style with scents
+                                                                    that resonate with your spirit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Article 1 -->
+                                    <div class="article mb-4">
+                                        <div></div>
+                                        <h1 class="mb-4">The Perfect Unisex Fragrance for Every Occasion</h1>
+                                        <p class="mb-4">Are you on the quest for the ultimate unisex fragrance that
+                                            seamlessly transitions from adventure to work, and from a night party to
+                                            everyday use? Look no further! Discover the perfect scent that captures the
+                                            essence of every occasion. Click here to delve into the world of versatile
+                                            fragrances that add a touch of sophistication to your daily life.</p>
+
+                                        <div class="accordion" id="accordionFAQ1">
+                                            <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Full Article
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionFAQ1">
+                                                    <div class="accordion-body-for-article">
+                                                        <div class="article">
+                                                            <div class="header">
+                                                                <h1>The Perfect Unisex Fragrance for Every Occasion</h1>
+                                                                <p>By Lia Jones , Perfume Expert</p>
+                                                            </div>
+                                                            <div class="article">
+                                                                <p>In the realm of personal expression and style,
+                                                                    finding the right fragrance is akin to discovering a
+                                                                    signature accessory that resonates with your
+                                                                    personality. The journey toward the perfect unisex
+                                                                    fragrance involves a delicate balance of notes and
+                                                                    versatility, ensuring it harmonizes with various
+                                                                    aspects of your life.</p>
+                                                                <h2>Adventure: Creed Aventus</h2>
+                                                                <p>For the spirited souls seeking olfactory
+                                                                    companionship during outdoor escapades, Creed
+                                                                    Aventus emerges as a beacon of invigorating scents.
+                                                                    With a dynamic blend of pineapple, bergamot, and
+                                                                    blackcurrant interwoven with smoky woods, Aventus
+                                                                    captures the essence of adventure. It's a fragrant
+                                                                    celebration of energy and exploration, making it an
+                                                                    ideal companion for thrilling excursions.</p>
+                                                                <h2>Work: Maison Margiela Replica - Jazz Club</h2>
+                                                                <p>Navigating the professional realm demands a fragrance
+                                                                    that strikes the perfect balance between subtlety
+                                                                    and sophistication. Maison Margiela's Jazz Club,
+                                                                    with its notes of tobacco, rum, and vanilla, crafts
+                                                                    an olfactory narrative of warmth and refinement.
+                                                                    It's the olfactory equivalent of a tailored suit,
+                                                                    making it an impeccable choice for the workplace.
+                                                                </p>
+                                                                <h2>Night Party: Yves Saint Laurent Black Opium</h2>
+                                                                <p>As the sun sets and the city comes alive, the allure
+                                                                    of Yves Saint Laurent's Black Opium takes center
+                                                                    stage. The enticing combination of coffee, vanilla,
+                                                                    and white flowers creates a captivating scent that
+                                                                    complements the vibrant atmosphere of night parties.
+                                                                    Black Opium transforms the night into a sensorial
+                                                                    experience, leaving an unforgettable impression.</p>
+                                                                <h2>Fit for Every Situation: Chanel Gabrielle Chanel
+                                                                </h2>
+                                                                <p>The quest for a fragrance that seamlessly transitions
+                                                                    through the myriad facets of life concludes with
+                                                                    Chanel's Gabrielle Chanel. This well-balanced floral
+                                                                    composition, featuring notes of jasmine,
+                                                                    ylang-ylang, and orange blossom, exudes timeless
+                                                                    elegance. Gabrielle Chanel is the olfactory
+                                                                    chameleon, effortlessly adapting to every situation,
+                                                                    from casual outings to formal gatherings.</p>
+                                                                <p>Embark on a fragrant journey that transcends the
+                                                                    boundaries of occasion. Each of these perfumes is a
+                                                                    carefully curated masterpiece, offering a unique
+                                                                    olfactory experience tailored to different facets of
+                                                                    your life. Elevate your personal style with scents
+                                                                    that resonate with your spirit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Article 1 -->
+                                    <div class="article mb-4">
+                                        <div></div>
+                                        <h1 class="mb-4">The Perfect Unisex Fragrance for Every Occasion</h1>
+                                        <p class="mb-4">Are you on the quest for the ultimate unisex fragrance that
+                                            seamlessly transitions from adventure to work, and from a night party to
+                                            everyday use? Look no further! Discover the perfect scent that captures the
+                                            essence of every occasion. Click here to delve into the world of versatile
+                                            fragrances that add a touch of sophistication to your daily life.</p>
+
+                                        <div class="accordion" id="accordionFAQ1">
+                                            <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        Full Article
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFour" data-bs-parent="#accordionFAQ1">
+                                                    <div class="accordion-body-for-article">
+                                                        <div class="article">
+                                                            <div class="header">
+                                                                <h1>The Perfect Unisex Fragrance for Every Occasion</h1>
+                                                                <p>By Lia Jones , Perfume Expert</p>
+                                                            </div>
+                                                            <div class="article">
+                                                                <p>In the realm of personal expression and style,
+                                                                    finding the right fragrance is akin to discovering a
+                                                                    signature accessory that resonates with your
+                                                                    personality. The journey toward the perfect unisex
+                                                                    fragrance involves a delicate balance of notes and
+                                                                    versatility, ensuring it harmonizes with various
+                                                                    aspects of your life.</p>
+                                                                <h2>Adventure: Creed Aventus</h2>
+                                                                <p>For the spirited souls seeking olfactory
+                                                                    companionship during outdoor escapades, Creed
+                                                                    Aventus emerges as a beacon of invigorating scents.
+                                                                    With a dynamic blend of pineapple, bergamot, and
+                                                                    blackcurrant interwoven with smoky woods, Aventus
+                                                                    captures the essence of adventure. It's a fragrant
+                                                                    celebration of energy and exploration, making it an
+                                                                    ideal companion for thrilling excursions.</p>
+                                                                <h2>Work: Maison Margiela Replica - Jazz Club</h2>
+                                                                <p>Navigating the professional realm demands a fragrance
+                                                                    that strikes the perfect balance between subtlety
+                                                                    and sophistication. Maison Margiela's Jazz Club,
+                                                                    with its notes of tobacco, rum, and vanilla, crafts
+                                                                    an olfactory narrative of warmth and refinement.
+                                                                    It's the olfactory equivalent of a tailored suit,
+                                                                    making it an impeccable choice for the workplace.
+                                                                </p>
+                                                                <h2>Night Party: Yves Saint Laurent Black Opium</h2>
+                                                                <p>As the sun sets and the city comes alive, the allure
+                                                                    of Yves Saint Laurent's Black Opium takes center
+                                                                    stage. The enticing combination of coffee, vanilla,
+                                                                    and white flowers creates a captivating scent that
+                                                                    complements the vibrant atmosphere of night parties.
+                                                                    Black Opium transforms the night into a sensorial
+                                                                    experience, leaving an unforgettable impression.</p>
+                                                                <h2>Fit for Every Situation: Chanel Gabrielle Chanel
+                                                                </h2>
+                                                                <p>The quest for a fragrance that seamlessly transitions
+                                                                    through the myriad facets of life concludes with
+                                                                    Chanel's Gabrielle Chanel. This well-balanced floral
+                                                                    composition, featuring notes of jasmine,
+                                                                    ylang-ylang, and orange blossom, exudes timeless
+                                                                    elegance. Gabrielle Chanel is the olfactory
+                                                                    chameleon, effortlessly adapting to every situation,
+                                                                    from casual outings to formal gatherings.</p>
+                                                                <p>Embark on a fragrant journey that transcends the
+                                                                    boundaries of occasion. Each of these perfumes is a
+                                                                    carefully curated masterpiece, offering a unique
+                                                                    olfactory experience tailored to different facets of
+                                                                    your life. Elevate your personal style with scents
+                                                                    that resonate with your spirit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Article 1 -->
+                                    <div class="article mb-4">
+                                        <div></div>
+                                        <h1 class="mb-4">The Perfect Unisex Fragrance for Every Occasion</h1>
+                                        <p class="mb-4">Are you on the quest for the ultimate unisex fragrance that
+                                            seamlessly transitions from adventure to work, and from a night party to
+                                            everyday use? Look no further! Discover the perfect scent that captures the
+                                            essence of every occasion. Click here to delve into the world of versatile
+                                            fragrances that add a touch of sophistication to your daily life.</p>
+
+                                        <div class="accordion" id="accordionFAQ1">
+                                            <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                                                <h2 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        Full Article
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFive" data-bs-parent="#accordionFAQ1">
+                                                    <div class="accordion-body-for-article">
+                                                        <div class="article">
+                                                            <div class="header">
+                                                                <h1>The Perfect Unisex Fragrance for Every Occasion</h1>
+                                                                <p>By Lia Jones , Perfume Expert</p>
+                                                            </div>
+                                                            <div class="article">
+                                                                <p>In the realm of personal expression and style,
+                                                                    finding the right fragrance is akin to discovering a
+                                                                    signature accessory that resonates with your
+                                                                    personality. The journey toward the perfect unisex
+                                                                    fragrance involves a delicate balance of notes and
+                                                                    versatility, ensuring it harmonizes with various
+                                                                    aspects of your life.</p>
+                                                                <h2>Adventure: Creed Aventus</h2>
+                                                                <p>For the spirited souls seeking olfactory
+                                                                    companionship during outdoor escapades, Creed
+                                                                    Aventus emerges as a beacon of invigorating scents.
+                                                                    With a dynamic blend of pineapple, bergamot, and
+                                                                    blackcurrant interwoven with smoky woods, Aventus
+                                                                    captures the essence of adventure. It's a fragrant
+                                                                    celebration of energy and exploration, making it an
+                                                                    ideal companion for thrilling excursions.</p>
+                                                                <h2>Work: Maison Margiela Replica - Jazz Club</h2>
+                                                                <p>Navigating the professional realm demands a fragrance
+                                                                    that strikes the perfect balance between subtlety
+                                                                    and sophistication. Maison Margiela's Jazz Club,
+                                                                    with its notes of tobacco, rum, and vanilla, crafts
+                                                                    an olfactory narrative of warmth and refinement.
+                                                                    It's the olfactory equivalent of a tailored suit,
+                                                                    making it an impeccable choice for the workplace.
+                                                                </p>
+                                                                <h2>Night Party: Yves Saint Laurent Black Opium</h2>
+                                                                <p>As the sun sets and the city comes alive, the allure
+                                                                    of Yves Saint Laurent's Black Opium takes center
+                                                                    stage. The enticing combination of coffee, vanilla,
+                                                                    and white flowers creates a captivating scent that
+                                                                    complements the vibrant atmosphere of night parties.
+                                                                    Black Opium transforms the night into a sensorial
+                                                                    experience, leaving an unforgettable impression.</p>
+                                                                <h2>Fit for Every Situation: Chanel Gabrielle Chanel
+                                                                </h2>
+                                                                <p>The quest for a fragrance that seamlessly transitions
+                                                                    through the myriad facets of life concludes with
+                                                                    Chanel's Gabrielle Chanel. This well-balanced floral
+                                                                    composition, featuring notes of jasmine,
+                                                                    ylang-ylang, and orange blossom, exudes timeless
+                                                                    elegance. Gabrielle Chanel is the olfactory
+                                                                    chameleon, effortlessly adapting to every situation,
+                                                                    from casual outings to formal gatherings.</p>
+                                                                <p>Embark on a fragrant journey that transcends the
+                                                                    boundaries of occasion. Each of these perfumes is a
+                                                                    carefully curated masterpiece, offering a unique
+                                                                    olfactory experience tailored to different facets of
+                                                                    your life. Elevate your personal style with scents
+                                                                    that resonate with your spirit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel border-start border-primary">
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
+            </div>
+
+            <!-- Navbar and Article Topic (1/4 of display) -->
+            <div class="col-lg-3">
+                <div class="container-xxl py-5">
+                    <div class="container py-5">
+                        <!-- Article Topics and Navbar content -->
+                        <div class="mb-4 d-flex flex-column justify-content-start align-items-start">
+                            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Article Topics</div>
+                            <!-- Add your article topic links or other content here -->
+                            <ul class="list-unstyled">
+                                <li><a href="#article1">Article 1</a></li>
+                                <li><a href="#article2">Article 2</a></li>
+                                <!-- Add more article links as needed -->
+                            </ul>
                         </div>
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item ps-5">
-                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
-                                    style="width: 60px; height: 60px;">
-                                <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
-                                </div>
-                            </div>
+                        <div class="mb-4 d-flex flex-column justify-content-start align-items-start">
+                            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Navbar Topic</div>
+                            <!-- Add your navbar links or other content here -->
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <!-- Add more links as needed -->
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -203,7 +593,8 @@
                         &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By
+                        <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -225,16 +616,16 @@
 
 
     <!-- JavaScript Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/counterup/jquery.counterup.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/jquery.counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-<!-- Template Javascript -->
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>

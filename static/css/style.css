@@ -385,7 +385,14 @@ h6,
 }
 
 .accordion .accordion-body {
-    padding: 15px 0 0 0;
+    padding: 15px 20px;
+}
+
+.accordion .accordion-body-for-article
+{
+    padding: 15px 35px 15px;
+    background-color: #eeeeee ;
+    border-radius: 10px;
 }
 
 
