@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -26,10 +26,20 @@ def article():
 
 @app.route('/contact')
 def contact():
-    msg = Message(subject='Hello from the other side!', sender='peter@mailtrap.io', recipients=['paul@mailtrap.io'])
-    msg.body = "Hey Paul, sending you this email from my Flask app, lmk if it works"
+    return render_template('contact.html')
+
+@app.route('/send_email', methods=['POST'])
+def send_email():
+    name = request.form['name']
+    email = request.form['email']
+    subject = request.form['subject']
+    message = request.form['message']
+
+    msg = Message(subject=subject, sender=email, recipients=['jay.jiratta@gmail.com'])
+    msg.body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
+
     mail.send(msg)
-    return "Message sent!"
+    return "Message sent successfully!"
 
 @app.route('/idoluse')
 def idoluse():
