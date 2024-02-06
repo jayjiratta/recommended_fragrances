@@ -554,3 +554,8 @@ h6,
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.col-lg-7-login {
+    flex: 0 0 auto;
+    width: 500px;
+}
