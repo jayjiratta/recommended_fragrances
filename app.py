@@ -35,11 +35,11 @@ def send_email():
     subject = request.form['subject']
     message = request.form['message']
 
-    msg = Message(subject=subject, sender=email, recipients=['jay.jiratta@gmail.com'])
+    msg = Message(subject=subject, sender=email, recipients=['support@scentspectrum.com'])
     msg.body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
 
     mail.send(msg)
-    return "Message sent successfully!"
+    return render_template('send_email.html')
 
 @app.route('/idoluse')
 def idoluse():
