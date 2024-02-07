@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1363C6;
+    --primary: #000;
     --secondary: #15ACE1;
     --light: #F4F7FE;
     --dark: #14183E;
@@ -370,7 +370,7 @@ h6,
 }
 
 .accordion .accordion-button {
-    background: var(--light);
+    background: #eeeeee;
     border-radius: 2px;
 }
 

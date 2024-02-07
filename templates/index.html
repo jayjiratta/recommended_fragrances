@@ -13,22 +13,23 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-<!-- Libraries Stylesheet -->
-<link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-<!-- Customized Bootstrap Stylesheet -->
-<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
-<!-- Template Stylesheet -->
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href= "{{ url_for('index') }}" class="navbar-brand">
+                <a href="{{ url_for('index') }}" class="navbar-brand">
                     <h1 class="text-white">SCENTSPECTRUM</h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
@@ -72,17 +73,21 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">SCENTSPECTRUM</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Discover Your Signature Scent with SCENTSPECTRUM</h1>
-                    <p class="text-white mb-4 animated slideInRight">Elevate your fragrance game with our curated recommendations. Find your perfect scent effortlessly. Uncover the essence of you.</p>
-                    <a href="{{ url_for('about') }}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slidseInRight">About Us</a>
-                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">SCENTSPECTRUM
+                    </div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Discover Your Signature Scent with
+                        SCENTSPECTRUM</h1>
+                    <p class="text-white mb-4 animated slideInRight">Elevate your fragrance game with our curated
+                        recommendations. Find your perfect scent effortlessly. Uncover the essence of you.</p>
+                    <a href="{{ url_for('about') }}"
+                        class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slidseInRight">About Us</a>
+                    <a href="{{ url_for('contact') }}"
+                        class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="{{ url_for('static', filename='img/header/home.png') }}" alt="">
@@ -92,6 +97,278 @@
     </div>
     <!-- Hero End -->
 
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Perfumes</div>
+                    <h1 class="mb-4">The Perfect Unisex Fragrance for Every Occasion</h1>
+                    <p class="mb-4">Are you on the quest for the ultimate unisex fragrance that seamlessly transitions
+                        from adventure to work, and from a night party to everyday use? Look no further! Discover the
+                        perfect scent that captures the essence of every occasion. Click here to delve into the world of
+                        versatile fragrances that add a touch of sophistication to your daily life.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="{{ url_for('article') }}">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="static/img/perfumes/aventus.png"
+                                            alt="">
+                                        <h5 class="mb-0">Creed Aventus</h5>
+                                        <small>Adventure</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-primary rounded-pill px-4"
+                                                href="https://creedboutique.com/products/aventus?variant=32812846743649">Purchase</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4"
+                                            src="static/img/perfumes/Jazz _Club.png" alt="">
+                                        <h5 class="mb-0">Maison Margiela</h5>
+                                        <h5 class="mb-0">Replica - Jazz Club</h5>
+                                        <small>Work</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-primary rounded-pill px-4"
+                                                href="https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html">Purchase</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4"
+                                            src="static/img/perfumes/Black Opium.png" alt="">
+                                        <h5 class="mb-0">Yves Saint Laurent Black Opium</h5>
+                                        <small>Night Party</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-primary rounded-pill px-4"
+                                                href="https://www.yslbeautyth.com/en_TH/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html">Purchase</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4"
+                                            src="static/img/perfumes/Gabrielle.png" alt="">
+                                        <h5 class="mb-0">Chanel Gabrielle Chanel</h5>
+                                        <small>Fit for Every Situation</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-primary rounded-pill px-4"
+                                                href="https://www.chanel.com/th/fragrance/women/c/7x1x1x40/gabrielle-chanel/">Purchase</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/header/aboutpic.png') }}">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
+                    <h1 class="mb-4">About ScentSpectrum</h1>
+                    <p class="mb-4">Welcome to ScentSpectrum, where we celebrate the kaleidoscope of fragrances that add
+                        color and depth to our lives. At ScentSpectrum, we believe that the world of scents is a vast
+                        and vibrant spectrum, offering an array of olfactory experiences waiting to be explored.</p>
+                    <p class="mb-4">Our passion lies in curating a diverse range of fragrances that cater to every
+                        corner of the scent spectrum. From the subtle and comforting to the bold and adventurous, we're
+                        here to guide you on a sensory journey through the ever-expanding world of perfumery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Idoluse</div>
+                    <h1 class="mb-4">aespa's Fragrance Palette: Exploring the Unique Scents Chosen by Each Member</h1>
+                    <p class="mb-4">Embark on a fragrant journey as we unveil the distinctive perfume choices of aespa's
+                        members. From the freshness of Jo Malone to the sophistication of Maison Louis Marie, each scent
+                        tells a story, reflecting the individuality of Karina, Winter, Giselle, and NingNing. Click here
+                        to immerse yourself in the captivating world of aespa's chosen fragrances.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="{{ url_for('article') }}">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <img class="img-fluid" src="static/img/idoluse/karina.png" alt="">
+                                        <h5 class="mb-3">Yu Jimin, Karina</h5>
+                                        <p>Jo Malone Blackberry and Bay Cologne</p>
+                                        <a class="btn px-3 mt-auto mx-auto"
+                                            href="https://www.jomalone.co.th/product/25946/23540/colognes/blackberry-bay-cologne">Purchase</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <img class="img-fluid" src="static/img/idoluse/winter.png" alt="">
+                                        <h5 class="mb-3">Kim Minjeong, Winter</h5>
+                                        <p>Acqua di Parma Colonia</p>
+                                        <a class="btn px-3 mt-auto mx-auto"
+                                            href="https://www.acquadiparma.com/default/en/note-di-colonia-ii/NDCIIEDC.html">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <img class="img-fluid" src="static/img/idoluse/gigi.png" alt="">
+                                        <h5 class="mb-3">Uchinaga Eri, Giselle</h5>
+                                        <p>Maison Louis Marie No. 4 Bois de Balincourt</p>
+                                        <a class="btn px-3 mt-auto mx-auto"
+                                            href="https://maisonlouismarie.com/products/no-04-bois-de-balincourt-perfume-oil">Purchase</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <img class="img-fluid" src="static/img/idoluse/ning.png" alt="">
+                                        <h5 class="mb-3">Ning Yi Zhuo, Ningning</h5>
+                                        <p>Le Labo Another 13</p>
+                                        <a class="btn px-3 mt-auto mx-auto"
+                                            href="https://www.lelabofragrances.com/another-13-463.html?size=100ml">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular
+                    FAQs</div>
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Are the product links provided in the brand gallery affiliate links?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    "No, the product links in our brand gallery are not affiliate links. We aim to
+                                    provide
+                                    direct links to the official websites of the featured brands, allowing you to
+                                    explore
+                                    and purchase their products with confidence. SCENTSPECTRUM is committed to
+                                    transparency
+                                    and providing valuable, non-biased information to our audience."
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I explore different fragrance brands on SCENTSPECTRUM?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    "Navigating through our website is simple. Visit the "Brands" section to discover a
+                                    curated collection of renowned fragrance brands. Each brand is accompanied by
+                                    stunning
+                                    visuals, and by clicking on the images, you can find more details about the brand
+                                    along
+                                    with direct links to their official websites."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How often do you update the content on SCENTSPECTRUM?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    "We aim to provide you with fresh and engaging content regularly. Typically, new
+                                    articles and brand features are added on a bi-weekly basis. However, we may adjust
+                                    the
+                                    frequency based on special events, launches, or community feedback. Stay tuned to
+                                    our
+                                    "Latest" section for the most up-to-date information."
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How does the fragrance recommendation process work on your website?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    "Our fragrance recommendation process involves expert analysis and curation of
+                                    articles rather than direct purchasing through the app. Our team of administrators
+                                    carefully selects and reviews fragrances, providing insightful articles to help you
+                                    make informed choices based on your preferences and lifestyle."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
@@ -100,7 +377,9 @@
                     <a href="{{ url_for('index') }}" class="d-inline-block mb-3">
                         <h3 class="text-white">SCENTSPECTRUM</h3>
                     </a>
-                    <p class="mb-0">Welcome to ScentSpectrum, where we celebrate the kaleidoscope of fragrances that add color and depth to our lives. From subtle comforts to bold adventures, we curate a diverse range of scents for every taste.</p>
+                    <p class="mb-0">Welcome to ScentSpectrum, where we celebrate the kaleidoscope of fragrances that add
+                        color and depth to our lives. From subtle comforts to bold adventures, we curate a diverse range
+                        of scents for every taste.</p>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
@@ -119,8 +398,8 @@
                     <h5 class="text-white mb-4">Popular Link</h5>
                     <a class="btn btn-link" href="{{ url_for('about') }}">About Us</a>
                     <a class="btn btn-link" href="{{ url_for('contact') }}">Contact Us</a>
-                    <a class="btn btn-link" href="{{ url_for('login') }}" >LOGIN</a>
-                    <a class="btn btn-link" href="{{ url_for('register') }}" >REGISTER</a>
+                    <a class="btn btn-link" href="{{ url_for('login') }}">LOGIN</a>
+                    <a class="btn btn-link" href="{{ url_for('register') }}">REGISTER</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <h5 class="text-white mb-4">Our Services</h5>
@@ -138,7 +417,8 @@
                         &copy; <a class="border-bottom" href="#">SCENTSPECTRUM</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By
+                        <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -157,17 +437,17 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
 
-<!-- JavaScript Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-<!-- Template Javascript -->
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 
