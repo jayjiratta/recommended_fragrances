@@ -43,4 +43,3 @@ To run this web application locally, follow these steps:
 If you have any questions, feedback, or suggestions, feel free to contact us by filling out the contact form on our website. We appreciate your input!
 
 Happy perfume hunting!
-From Y1 - Student
