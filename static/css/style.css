@@ -221,7 +221,7 @@ h6,
 }
 
 
-/*** Service ***/
+/*** idoluse ***/
 .service-item {
     position: relative;
     padding: 45px 30px;
@@ -292,36 +292,6 @@ h6,
     background: url(../img/bg-hero.png) center center no-repeat;
     background-size: cover;
 }
-
-
-/*** Newsletter ***/
-.newsletter {
-    background: url(../img/bg-hero.png) center center no-repeat;
-    background-size: cover;
-}
-
-@media (min-width: 992px) {
-    .newsletter .container {
-        max-width: 100% !important;
-    }
-
-    .newsletter .newsletter-text {
-        padding-right: calc(((100% - 960px) / 2) + .75rem);
-    }
-}
-
-@media (min-width: 1200px) {
-    .newsletter .newsletter-text {
-        padding-right: calc(((100% - 1140px) / 2) + .75rem);
-    }
-}
-
-@media (min-width: 1400px) {
-    .newsletter .newsletter-text {
-        padding-right: calc(((100% - 1320px) / 2) + .75rem);
-    }
-}
-
 
 /*** Case Study ***/
 .case-item img {
@@ -546,6 +516,7 @@ h6,
     border-right: none;
 }
 
+/* send email */
 .send_email {
     max-width: 600px;
     margin: 0 auto;
@@ -555,9 +526,8 @@ h6,
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* login */
 .col-lg-7-login {
     flex: 0 0 auto;
     width: 500px;
 }
-
-/* #313c4a bg color */ 
