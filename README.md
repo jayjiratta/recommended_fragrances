@@ -1,6 +1,6 @@
-# Freshman Perfume Recommender
+# SCENTSPECTRUM
 
-Welcome to Freshman Perfume Recommender! This web application is designed to help you discover the perfect perfume for you, whether it's a popular brand or one inspired by your favorite K-pop idols. Additionally, you can read articles about different perfumes and stay updated with the latest trends.
+Welcome to SCENTSPECTRUM! This web application is designed to help you discover the perfect perfume for you, whether it's a popular brand or one inspired by my favorite K-pop idols. Additionally, you can read articles about different perfumes and stay updated with the latest trends.
 
 ## Features
 
@@ -9,8 +9,7 @@ Welcome to Freshman Perfume Recommender! This web application is designed to hel
 - **Idoluse:** Learn about perfumes endorsed by your favorite K-pop idols.
 - **Articles:** Stay informed with articles on various perfume topics.
 - **User Authentication:** Register and login to personalize your experience.
-- **Contact Form:** Reach out to us directly through the contact form.
-- **Admin Email Notification:** Get notified via email when a user submits the contact form.
+- **Contact Form:** Reach out to us directly through the contact form
 
 ## Usage
 
