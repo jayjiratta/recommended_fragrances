@@ -21,20 +21,22 @@ To run this web application locally, follow these steps:
     ```
     pip install -r requirements.txt
     ```
+3. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
 
-3. Run the Flask application:
+4. Run the Flask application:
 
     ```
     flask run --debug
     ```
 
-4. Open your web browser and navigate to `http://localhost:5000` to access the application.
+5. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Technologies Used
 
 - Flask: A lightweight WSGI web application framework in Python.
 - Bootstrap 5: A popular CSS framework for building responsive and mobile-first websites.
 - SQLite: A lightweight relational database management system.
+- Mailtrap: An email testing tool for development and staging environments.
 
 ## Contact Us
 
