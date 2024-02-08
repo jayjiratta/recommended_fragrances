@@ -23,7 +23,7 @@ To run this web application locally, follow these steps:
     pip install -r requirements.txt
     ```
 
-3. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
+3. Set up Mailtrap for contact us by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
    
 4. Run the Flask application:
 
