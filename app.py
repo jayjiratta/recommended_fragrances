@@ -36,7 +36,7 @@ def login():
 
         if user and check_password_hash(user.password, password):
             login_user(user)
-            return redirect(url_for('blog')) # direct after login
+            return redirect(url_for('index')) # direct after login
         else:
             flash('Invalid username or password', 'error')  
             return redirect(url_for('login'))
@@ -94,13 +94,15 @@ def register():
         name = request.form.get('name')
         username = request.form.get('username')
         password = request.form.get('password')
-        if not username or not password:
-            flash('Username and Password are required', 'error')
-            return redirect(url_for('register'))
-
+        
+        # Check if username already exists
         user_exists = User.query.filter_by(username=username).first()
         if user_exists:
             flash('Username already exists', 'error')
+            return redirect(url_for('register'))
+        
+        if not username or not password:
+            flash('Username and Password are required', 'error')
             return redirect(url_for('register'))
 
         hashed_password = generate_password_hash(password)
@@ -111,6 +113,7 @@ def register():
         flash('Registration successful! Please login.', 'success')
         return redirect(url_for('login'))
     return render_template('register.html')
+
 
 if __name__ == "__main__":
     with app.app_context():
