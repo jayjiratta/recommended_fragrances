@@ -56,6 +56,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
+                        {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('index') }}" class="nav-item nav-link active">Home</a>
+                        <a href="{{ url_for('faq') }}" class="nav-item nav-link">FAQs</a>
+                        <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+                        <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
+                        <a href="{{ url_for('logout') }}" class="nav-item nav-link">LOGOUT</a>
+
+                        {% else %}
                         <a href="{{ url_for('index') }}" class="nav-item nav-link active">Home</a>
                         <a href="{{ url_for('perfume') }}" class="nav-item nav-link">Perfumes</a>
                         <a href="{{ url_for('brand') }}" class="nav-item nav-link">Brands</a>
@@ -66,6 +74,7 @@
                         <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
                         <a href="{{ url_for('login') }}" class="nav-item nav-link">LOGIN</a>
                         <a href="{{ url_for('register') }}" class="nav-item nav-link">REGISTER</a>
+                        {% endif %}
                     </div>
                 </div>
             </nav>
