@@ -114,6 +114,12 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html')
 
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
+
 
 if __name__ == "__main__":
     with app.app_context():
