@@ -9,7 +9,11 @@ Welcome to SCENTSPECTRUM! This web application is designed to help you discover 
 - **Idoluse:** Learn about perfumes endorsed by your favorite K-pop idols.
 - **Articles:** Stay informed with articles on various perfume topics.
 - **User Authentication:** Register and login to personalize your experience.
+<<<<<<< HEAD
 - **Contact Form:** Reach out to us directly through the contact form.
+=======
+- **Contact Form:** Reach out to us directly through the contact form
+>>>>>>> f5bd381f56f4f90df44cfb30357a20ae77200749
 
 ## Usage
 
