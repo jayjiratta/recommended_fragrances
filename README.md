@@ -30,7 +30,7 @@ To run this web application locally, follow these steps:
 4. Run the Flask application:
 
     ```
-    flask run --debug
+    flask --app app  run --debug
     ```
 
 5. Open your web browser and navigate to `http://localhost:5000` to access the application.

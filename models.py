@@ -3,11 +3,8 @@ from flask_login import UserMixin
 
 db = SQLAlchemy()
 
-class User(UserMixin, db.Model):
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100))
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    password = db.Column(db.String(200), nullable=False)
-    
-    # Relationship with cards
-    cards = db.relationship('Card', backref='user', lazy=True)
+    username = db.Column(db.String(100), unique=True, nullable=False)
+    password = db.Column(db.String(100), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
