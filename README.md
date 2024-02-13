@@ -21,20 +21,29 @@ To run this web application locally, follow these steps:
     ```
     python -m venv venv
     ```
-3. Install the required dependencies using pip:
+3. Activate the virtual environment:
+    - On Windows:
+        ```
+        venv\Scripts\activate
+        ```
+    - On macOS and Linux:
+        ```
+        source venv/bin/activate
+        ```
+4. Install the required dependencies using pip:
 
     ```
     pip install -r requirements.txt
     ```
-4. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
+5. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
 
-5. Run the Flask application:
+6. Run the Flask application:
 
     ```
     flask --app app  run --debug
     ```
 
-6. Open your web browser and navigate to `http://localhost:5000` to access the application.
+7. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Technologies Used
 
