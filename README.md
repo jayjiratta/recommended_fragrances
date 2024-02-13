@@ -17,20 +17,24 @@ Welcome to SCENTSPECTRUM! This web application is designed to help you discover 
 To run this web application locally, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Install the required dependencies using pip:
+2. Set up a virtual environment:
+    ```
+    python -m venv venv
+    ```
+3. Install the required dependencies using pip:
 
     ```
     pip install -r requirements.txt
     ```
-3. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
+4. Set up Mailtrap for email notification by following the instructions [here](https://mailtrap.io/blog/flask-email-sending/).
 
-4. Run the Flask application:
+5. Run the Flask application:
 
     ```
     flask --app app  run --debug
     ```
 
-5. Open your web browser and navigate to `http://localhost:5000` to access the application.
+6. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Technologies Used
 
